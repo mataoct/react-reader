@@ -4,8 +4,6 @@
   "description": "A epub-reader for React powered by ePubJS",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "NODE_ENV=production babel --optional runtime -d lib/ src/",
-    "prepare": "npm run compile",
     "start": "webpack-dev-server --port 3001 --host 0.0.0.0 --progress --colors --config ./webpack.config.js",
     "build": "webpack --verbose --colors --display-error-details --config ./webpack.build.config.js",
     "deploy": "gh-pages-deploy",
